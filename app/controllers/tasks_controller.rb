@@ -6,6 +6,7 @@ class TasksController < ApplicationController
   end
 
   def new
+    @task = Tsak.new
   end
 
   def edit
