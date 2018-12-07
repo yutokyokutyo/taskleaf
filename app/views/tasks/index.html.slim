@@ -10,5 +10,5 @@ table.table.table-hover
       th= Task.human_attribute_name(:created_at)
   tbody
     - @tasks.each do |task|
-      td= task.name
+      td= link_to task.name, task_path(task)
       td= task.created_at
